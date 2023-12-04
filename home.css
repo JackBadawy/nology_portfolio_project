@@ -1,0 +1,65 @@
+.main__projects--styling {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+}
+
+.main--styling {
+  min-height: 70vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.main__skills {
+  min-height: 100px;
+}
+
+.main__skills {
+  min-height: 200px;
+}
+
+.home__btn {
+  height: 192px;
+  width: 136px;
+  border-radius: 14px;
+  border: none;
+}
+.home__btn--text {
+  text-decoration: none;
+}
+
+#homeBtnOne {
+  background-color: #91a6ff;
+}
+
+#homeBtnOne:hover {
+  background-color: #8799ec;
+}
+
+#homeBtnTwo {
+  background-color: #ff88dc;
+}
+
+#homeBtnTwo:hover {
+  background-color: #d872b9;
+}
+
+#homeBtnThree {
+  background-color: #faff7f;
+}
+
+#homeBtnThree:hover {
+  background-color: #c7cb63;
+}
+
+#homeBtnFour {
+  background-color: #fff;
+}
+
+#homeBtnFour:hover {
+  background-color: #c8c6c6;
+}/*# sourceMappingURL=home.css.map */

@@ -1,0 +1,64 @@
+@use "sass/variables";
+
+.main__projects--styling {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+}
+
+.main--styling {
+  min-height: 70vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.main__skills {
+  min-height: 100px;
+}
+
+.main__skills {
+  min-height: 200px;
+}
+
+.home__btn {
+  height: 192px;
+  width: 136px;
+  border-radius: 14px;
+  border: none;
+
+  &--text {
+    text-decoration: none;
+  }
+}
+
+#homeBtnOne {
+  background-color: variables.$homeBtnClrOne;
+}
+#homeBtnOne:hover {
+  background-color: variables.$homeBtnClrOneHover;
+}
+
+#homeBtnTwo {
+  background-color: variables.$homeBtnClrTwo;
+}
+#homeBtnTwo:hover {
+  background-color: variables.$homeBtnClrTwoHover;
+}
+
+#homeBtnThree {
+  background-color: variables.$homeBtnClrThree;
+}
+#homeBtnThree:hover {
+  background-color: variables.$homeBtnClrThreeHover;
+}
+
+#homeBtnFour {
+  background-color: variables.$homeBtnClrFour;
+}
+#homeBtnFour:hover {
+  background-color: variables.$homeBtnClrFourHover;
+}
