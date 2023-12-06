@@ -3,65 +3,40 @@
 * {
   margin: 0;
   padding: 0;
+  font-family: "Source Code Pro", monospace;
 }
 
-.body__color {
-  margin: 10px 10px 10px 10px;
-  background-attachment: fixed;
-  background: variables.$backgoundGradient;
-  height: 100vh;
+html {
+  scroll-behavior: smooth;
+  min-height: 100%;
 }
 
 .body {
-  background-attachment: fixed;
-  background: variables.$backgoundGradient;
-  min-height: 100vh;
+  /* background-attachment: fixed;
+  background: variables.$backgroundGradient;
+  min-height: 100%; */
 }
 
 /*move stuff to variables and mixin and nav scss*/
 
 /*if position absolute is unprofessional make everything a header, make background color half and half then center button*/
 
-#landingPageHeader {
-  background-color: rgba(87, 87, 87, 0.5);
-  height: 49vh;
-  display: flex;
-  border-radius: 15px 15px 0px 0px;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
-  flex-direction: column;
-}
-
-#landingPageH1 {
-  height: min-content;
-}
-
-#landingPageMain {
-  background-color: rgba(163, 163, 163, 0.5);
-  height: 49vh;
-  border-radius: 0px 0px 15px 15px;
-  border: solid black;
-}
-
-#landingPageNav {
-  margin-top: 25vh;
-  margin-bottom: -20vh;
-}
-
 .nav {
   display: flex;
   justify-content: space-between;
-  background-color: rgba(128, 128, 128, 0.299);
+  background-color: variables.$backgroundGradientColorOneTransparent;
   position: fixed;
   width: 100%;
   backdrop-filter: blur(2px);
   top: 0%;
+
+  &__standin {
+    background-color: variables.$backgroundGradientColorOne;
+  }
 }
 
 .nav__standin {
   height: 54px;
-  margin-bottom: 10px;
 }
 
 .links__list--styling {
@@ -72,6 +47,82 @@
 .links__anchor--styling {
   border: 1px solid black;
   padding: 3px;
+}
+
+.main__landingPage {
+  height: 40rem;
+  background-attachment: fixed;
+  background: variables.$backgroundGradient;
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: right;
+  align-items: center;
+  gap: 30%; /*this will cause issues if you need to force button position with Margin*/
+
+  &--greeting-box-setup {
+    display: flex;
+    flex-direction: column;
+    margin-right: 2rem;
+  }
+
+  &--h1-typography {
+    font-size: 45px;
+    font-weight: 600;
+    text-decoration: underline dashed;
+    margin-bottom: 1rem;
+  }
+
+  &--title-typography {
+    margin-top: 1rem;
+    text-decoration: overline;
+  }
+
+  &__button {
+    color: variables.$landBtnTxtClr;
+    background-color: variables.$landBtnBckClr;
+    border: none;
+    height: 4rem;
+    width: 20rem;
+    margin-left: 5rem;
+  }
+
+  &__button--slant {
+    transform: skewX(-25deg);
+
+    &--content {
+      transform: skewX(25deg);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 20px;
+      font-weight: 500;
+      height: 4rem;
+      width: 20rem;
+      position: relative;
+
+      &:hover {
+        transform: skewX(-25deg);
+
+        transition: all 1s ease-in-out 0.1s;
+      }
+    }
+  }
+
+  &__button--slant:hover {
+    transform: skewX(25deg);
+
+    transition: all 1s ease-in-out 0.1s;
+  }
+
+  /* &__button--slant--content {
+    transform: skewX(40deg);
+    display: inline-block;
+    font-size: 20px;
+    font-weight: 500;
+    &
+  } */
 }
 
 .footer {

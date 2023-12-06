@@ -1,0 +1,53 @@
+@use "sass/home/mixins";
+@use "sass/variables";
+* {
+  margin: 0;
+  padding: 0;
+}
+html {
+  height: 100%;
+}
+
+.body__color {
+  margin: 10px 10px 10px 10px;
+  background-attachment: fixed;
+  background: variables.$backgoundGradient;
+  background-size: cover;
+  height: 99%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.body__button {
+  z-index: 1;
+}
+
+#landingPageHeader {
+  background-color: rgba(87, 87, 87, 0.5);
+  @include mixins.landing-main-box-dimensions;
+  display: flex;
+  border-radius: 15px 15px 0px 0px;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+#landingPageH1 {
+  height: min-content;
+}
+
+#landingPageMain {
+  background-color: rgba(163, 163, 163, 0.5);
+  @include mixins.landing-main-box-dimensions;
+  border-radius: 0px 0px 15px 15px;
+  border: none;
+}
+
+#landingPageNav {
+  justify-self: center;
+  z-index: 1;
+  margin-bottom: -20%;
+}

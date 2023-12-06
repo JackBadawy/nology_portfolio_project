@@ -1,4 +1,22 @@
-$backgoundGradient: linear-gradient(160deg, #f7c4ce, #c9d4fd);
+/* Base Background Colors*/
+
+$backgroundGradientColorOne: #f7c4ce;
+$backgroundGradientColorTwo: #c9d4fd;
+
+$backgroundGradientColorOneTransparent: #f7c4ce5d;
+
+$backgroundGradient: linear-gradient(
+  $backgroundGradientColorOne 20%,
+  $backgroundGradientColorTwo
+);
+
+/* Landing page button colors*/
+$landBtnTxtClr: rgba(0, 0, 0, 0.95);
+$landBtnBckClr: rgba(62, 62, 62, 0.35);
+$landBtnBorClr: rgba(63, 63, 63, 0.4);
+
+$landBtnTxtClrTransition: rgba(0, 0, 0, 0);
+$landBtnBckClrTransition: rgba(62, 62, 62, 0.95);
 
 //Project Button Colours
 $homeBtnClrOne: #91a6ff;

@@ -6,14 +6,22 @@
     <title>Document</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="home.css" />
+
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
   </head>
+
   <body class="body">
     <div class="nav__standin"></div>
     <nav class="nav">
       <div id="logoContainer">
         <img src="./img/placeholderLogo.png" alt="Jack Badawy" />
       </div>
-
       <div id="linkContainer">
         <ul class="links__list--styling">
           <li><a href="" class="links__anchor--styling">about me</a></li>
@@ -24,10 +32,26 @@
         </ul>
       </div>
     </nav>
-    <main class="main--styling">
-      <!--move to main-->
 
-      <section class="main__skills">
+    <main class="main--styling">
+      <section class="main__landingPage">
+        <div class="main__landingPage__button--slant">
+          <button class="main__landingPage__button">
+            <a class="main__landingPage__button--slant--content" href="#skills"
+              >Get Started</a
+            >
+          </button>
+        </div>
+        <div class="main__landingPage--greeting-box-setup">
+          <h1 class="main__landingPage--h1-typography">Greetings, I'm Jack!</h1>
+          <h2>Welcome to my portfolio</h2>
+          <h3 class="main__landingPage--title-typography">
+            Junior Full-Stack Developer
+          </h3>
+        </div>
+      </section>
+
+      <section class="main__skills" id="skills">
         <h2>skills:</h2>
         <!-- add logo's -->
         <p>I am proficient in:</p>
