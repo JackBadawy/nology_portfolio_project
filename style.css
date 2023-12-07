@@ -1,4 +1,5 @@
 /* Base Background Colors*/
+/* $skillsBackGroundColor: #9b9b9b; */
 /* Landing page button colors*/
 * {
   margin: 0;
@@ -28,9 +29,13 @@ html {
   -webkit-backdrop-filter: blur(2px);
           backdrop-filter: blur(2px);
   top: 0%;
+  z-index: 1;
 }
 .nav__standin {
   background-color: #f7c4ce;
+}
+.nav__logo {
+  margin-top: 4px;
 }
 
 .nav__standin {
@@ -40,15 +45,31 @@ html {
 .links__list--styling {
   display: flex;
   list-style: none;
+  height: 54px;
+}
+.links__list__item {
+  height: 54px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
 }
 
 .links__anchor--styling {
-  border: 1px solid black;
+  border-left: 2px solid rgba(185, 147, 155, 0.2431372549);
   padding: 3px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  text-shadow: 0px 2px 2px rgba(255, 255, 255, 0.459);
+  font-weight: 700;
 }
 
 .main__landingPage {
-  height: 40rem;
   background-attachment: fixed;
   background: linear-gradient(#f7c4ce 20%, #c9d4fd);
   min-height: 100vh;
@@ -57,14 +78,7 @@ html {
   flex-direction: row;
   justify-content: right;
   align-items: center;
-  gap: 30%; /*this will cause issues if you need to force button position with Margin*/
-  /* &__button--slant--content {
-    transform: skewX(40deg);
-    display: inline-block;
-    font-size: 20px;
-    font-weight: 500;
-    &
-  } */
+  gap: 20%; /*this will cause issues if you need to force button position with Margin*/
 }
 .main__landingPage--greeting-box-setup {
   display: flex;
@@ -89,12 +103,19 @@ html {
   height: 4rem;
   width: 20rem;
   margin-left: 5rem;
+  border-radius: 30px 3px 30px 3px;
+  box-shadow: 10px 10px rgba(0, 0, 0, 0.95);
+  /* margin-left: 10px; */
+}
+.main__landingPage__button:hover {
+  border-radius: 3px 30px 3px 30px;
+  transition: all 1s ease-out 0.1s;
 }
 .main__landingPage__button--slant {
-  transform: skewX(-25deg);
+  /* transform: skewX(-25deg); */
 }
 .main__landingPage__button--slant--content {
-  transform: skewX(25deg);
+  /* transform: skewX(25deg) */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -105,15 +126,96 @@ html {
   position: relative;
 }
 .main__landingPage__button--slant--content:hover {
-  transform: skewX(-25deg);
-  transition: all 1s ease-in-out 0.1s;
+  /* transform: skewX(-25deg);
+
+  transition: all 1s ease-in-out 0.1s; */
 }
 .main__landingPage__button--slant:hover {
-  transform: skewX(25deg);
-  transition: all 1s ease-in-out 0.1s;
+  /* transform: skewX(25deg);
+
+  transition: all 1s ease-in-out 0.1s; */
+}
+.main__landingPage__button--slant--content {
+  color: rgba(0, 0, 0, 0.95);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.main__about-me {
+  background: linear-gradient(to left, #2e324e, #2c3a62);
+  color: whitesmoke;
+  height: 60vh;
 }
 
 .footer {
-  background-color: rgba(0, 0, 0, 0.268);
-  height: 30vh;
+  background: linear-gradient(to left, #2e324e, #2c3a62);
+  height: 90vh;
+  color: whitesmoke;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5rem;
+  padding: 5rem;
+}
+.footer__about-me--underline {
+  text-decoration: underline;
+  margin-bottom: 1rem;
+}
+.footer__about-me__para {
+  max-width: 25rem;
+  font-size: 18px;
+}
+.footer__contact-me__link {
+  color: whitesmoke;
+}
+.footer__about-me__picture {
+  border-radius: 100%;
+  box-shadow: 0 2px 15px white;
+}
+
+@media only screen and (max-width: 835px) {
+  .main__skills__container {
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: center;
+    gap: 0;
+    margin-left: 0rem;
+  }
+  .footer {
+    flex-direction: column;
+  }
+  .footer__about-me__picture {
+    height: 200px;
+  }
+}
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (max-width: 1055px) {
+  .main__landingPage {
+    flex-direction: column-reverse;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+  }
+  .main__landingPage__button {
+    margin-right: 65px;
+  }
+  .footer {
+    flex-direction: column;
+  }
+}
+@media only screen and (max-width: 1245px) {
+  .main__skills__container {
+    /* flex-wrap: wrap; */
+  }
+  .main__skills__list {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .main__skills__skill > img {
+    height: 40px;
+  }
+  .main__skills__heading {
+    font-size: 15px;
+  }
 }/*# sourceMappingURL=style.css.map */

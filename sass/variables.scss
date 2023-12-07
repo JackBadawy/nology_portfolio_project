@@ -10,6 +10,17 @@ $backgroundGradient: linear-gradient(
   $backgroundGradientColorTwo
 );
 
+//skills background color
+/* $skillsBackGroundColor: #9b9b9b; */
+$skillsBackGroundColor: linear-gradient(to left, #2e324e, #2c3a62);
+
+//Projects Background Gradient
+$projectsGradient: linear-gradient(
+  145deg,
+  rgb(143, 210, 143),
+  rgb(69, 142, 69)
+);
+
 /* Landing page button colors*/
 $landBtnTxtClr: rgba(0, 0, 0, 0.95);
 $landBtnBckClr: rgba(62, 62, 62, 0.35);
