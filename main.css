@@ -69,14 +69,17 @@
   color: whitesmoke;
   width: 252px;
   text-wrap: nowrap;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
 }
 .main__skills__container {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  gap: 7rem;
+  gap: 6rem;
   margin-left: 2rem;
+  padding-bottom: 2rem;
 }
 .main__skills > img {
   height: 64px;
