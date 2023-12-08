@@ -149,7 +149,7 @@ html {
 
 .footer {
   background: linear-gradient(to left, #2e324e, #2c3a62);
-  height: 90vh;
+  min-height: 90vh;
   color: whitesmoke;
   display: flex;
   justify-content: center;
