@@ -1,0 +1,174 @@
+@use "sass/variables";
+
+.main__projects {
+  &--styling {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    min-height: 80vh;
+    width: 100%;
+    background: variables.$backgroundGradient;
+    scroll-margin: 54px;
+  }
+
+  &__outer__container {
+    /* flex-basis: 100%; */
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    display: flex;
+    gap: 5rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    min-height: 485px;
+  }
+
+  &__para {
+    text-decoration: underline;
+    font-weight: 600;
+  }
+
+  &__project {
+    display: flex;
+
+    width: 350px;
+    gap: 2rem;
+    background-color: rgba(128, 128, 128, 0.189);
+    border-radius: 10px;
+  }
+
+  &__description {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    max-width: 150px;
+  }
+
+  &__github,
+  &__github:visited {
+    color: black;
+  }
+
+  &__heading {
+    font-size: 28px;
+    margin-top: 3rem;
+  }
+}
+
+.main--styling {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.main__skills {
+  min-height: 50vh;
+  width: 100%;
+  scroll-margin: 54px;
+  display: flex;
+  background: variables.$skillsBackGroundColor;
+
+  &__heading {
+    text-shadow: -2px -2px black;
+    font-size: 30px;
+    color: whitesmoke;
+    width: 252px;
+    text-wrap: nowrap;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  &__container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 6rem;
+    margin-left: 2rem;
+    padding-bottom: 2rem;
+  }
+  & > img {
+    height: 64px;
+  }
+
+  &__list {
+    display: flex;
+    gap: 5rem;
+    list-style: none;
+  }
+
+  &__skill {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+    &--typography {
+      text-align: center;
+      font-weight: 600;
+      color: whitesmoke;
+    }
+  }
+}
+
+.main__projects__btn {
+  height: 192px;
+  width: 136px;
+  border-radius: 14px;
+  border: none;
+  box-shadow: 10px 4px black;
+  overflow: hidden;
+  position: relative;
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+  &--text {
+    text-decoration: none;
+    font-weight: 700;
+    color: rgb(0, 0, 0);
+    z-index: 2;
+    /* background-color: antiquewhite; */
+    font-size: 18px;
+    border-radius: 10px;
+    text-decoration: underline;
+  }
+}
+
+.project__btn__image {
+  position: absolute;
+  opacity: 0.4;
+  top: 0;
+  left: 0;
+}
+
+#projectBtnOne {
+  background-color: variables.$homeBtnClrOne;
+}
+#projectBtnOne:hover {
+  background-color: variables.$homeBtnClrOneHover;
+}
+
+#projectBtnTwo {
+  background-color: variables.$homeBtnClrTwo;
+}
+#projectBtnTwo:hover {
+  background-color: variables.$homeBtnClrTwoHover;
+}
+
+#projectBtnThree {
+  background-color: variables.$homeBtnClrThree;
+}
+#projectBtnThree:hover {
+  background-color: variables.$homeBtnClrThreeHover;
+}
+
+#projectBtnFour {
+  background-color: variables.$homeBtnClrFour;
+}
+#projectBtnFour:hover {
+  background-color: variables.$homeBtnClrFourHover;
+}

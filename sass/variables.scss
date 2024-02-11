@@ -1,0 +1,46 @@
+/* Base Background Colors*/
+
+$backgroundGradientColorOne: #f7c4ce;
+$backgroundGradientColorTwo: #c9d4fd;
+
+$backgroundGradientColorOneTransparent: #f7c4ce5d;
+
+$backgroundGradient: linear-gradient(
+  $backgroundGradientColorOne 20%,
+  $backgroundGradientColorTwo
+);
+
+//skills background color
+/* $skillsBackGroundColor: #9b9b9b; */
+$skillsBackGroundColor: linear-gradient(to left, #2e324e, #2c3a62);
+
+//Projects Background Gradient
+$projectsGradient: linear-gradient(
+  145deg,
+  rgb(143, 210, 143),
+  rgb(69, 142, 69)
+);
+
+/* Landing page button colors*/
+$landBtnTxtClr: rgba(0, 0, 0, 0.95);
+$landBtnBckClr: rgba(62, 62, 62, 0.35);
+$landBtnBorClr: rgba(63, 63, 63, 0.4);
+
+$landBtnTxtClrTransition: rgba(0, 0, 0, 0);
+$landBtnBckClrTransition: rgba(62, 62, 62, 0.95);
+
+//Project Button Colours
+$homeBtnClrOne: #91a6ff;
+$homeBtnClrOneHover: #8799ec;
+
+$homeBtnClrTwo: #ff88dc;
+$homeBtnClrTwoHover: #d872b9;
+
+$homeBtnClrThree: #faff7f;
+$homeBtnClrThreeHover: #c7cb63;
+
+$homeBtnClrFour: #fff;
+$homeBtnClrFourHover: #c8c6c6;
+
+$homeBtnClrFive: #d84548;
+$homeBtnClrFiveHover: #ff5154;

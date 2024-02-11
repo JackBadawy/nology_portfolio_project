@@ -1,0 +1,12 @@
+@use "../variables";
+
+@mixin landing-main-box-dimensions {
+  height: 25rem;
+  width: 90%;
+}
+
+@mixin background-light-gradient {
+  background-attachment: fixed;
+  background: variables.$backgroundGradient;
+  min-height: 100%;
+}

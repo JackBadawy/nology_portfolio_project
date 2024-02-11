@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jack Badawy | Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="main.css" />
+
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body class="body">
+    <div class="nav__standin"></div>
+    <nav class="nav">
+      <div id="logoContainer">
+        <img src="./img/jack_logo.png" alt="Jack Badawy" height="48px" class="nav__logo"/>
+      </div>
+      <div id="linkContainer">
+        <ul class="links__list--styling">
+          
+
+          <li class="links__list__item"><a href="#skills" class="links__anchor--styling">Skills</a></li>
+
+          <li class="links__list__item"><a href="#projects" class="links__anchor--styling">Projects</a></li>
+
+          <li class="links__list__item"><a href="#footer" class="links__anchor--styling">about me</a></li>
+          
+        </ul>
+      </div>
+    </nav>
+
+    <main class="main--styling">
+      <section class="main__landingPage">
+        <div class="main__landingPage__button--slant">
+          <button class="main__landingPage__button">
+            <a class="main__landingPage__button--slant--content" href="#skills"
+              >Get Started</a
+            >
+          </button>
+        </div>
+        <div class="main__landingPage--greeting-box-setup">
+          <h1 class="main__landingPage--h1-typography">Greetings, I'm Jack!</h1>
+          <h2>Welcome to my portfolio</h2>
+          <h3 class="main__landingPage--title-typography">
+            Junior Full-Stack Developer
+          </h3>
+        </div>
+      </section>
+
+      <section class="main__skills" id="skills">
+        <!-- <h2>skills:</h2> -->
+
+        <div class="main__skills__container">
+          <!--grey gradient left-right-->
+          <h2 class="main__skills__heading">I can code in:</h2>
+          <ul class="main__skills__list">
+            <li class="main__skills__skill">
+              <img src="img/html5-badge-h-solo.png" alt="Html Logo" />
+              <p class="main__skills__skill--typography">Html</p>
+            </li>
+            <li class="main__skills__skill">
+              <img src="img/CSS3_logo.svg.png" alt="CSS Logo" height="64px" />
+              <p class="main__skills__skill--typography">CSS</p>
+            </li>
+            <li class="main__skills__skill">
+              <img
+                src="img/javascript-39395.png"
+                alt="Javascript Logo"
+                height="64px"
+              />
+              <p class="main__skills__skill--typography">Javascript</p>
+            </li>
+            <li class="main__skills__skill">
+              <img
+                src="img/128px-Sass_Logo_Color.svg.png"
+                alt="Sass logo"
+                height="64px"
+              />
+              <p class="main__skills__skill--typography">Sass</p>
+            </li>
+            <li class="main__skills__skill">
+              <img src="img/React-icon.svg" alt="React logo" height="64px" />
+              <p class="main__skills__skill--typography">React</p>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="main__projects--styling" id="projects">
+        <h1 class="main__projects__heading">Projects</h1>
+        <!--green gradient-->
+        <p class="main__projects__para">
+          Check out some of the projects I have worked on!
+        </p>
+
+<div class="main__projects__outer__container">
+        <div class="main__projects__container">
+          <span class="main__projects__project">
+            <button class="main__projects__btn" id="projectBtnOne">
+              <!---->
+              <img src="img/tictactoe.avif" alt="Tic Tac Toe" height="192" width="136" class="project__btn__image">
+            </button>
+            <span class="main__projects__description">
+              <p  class="main__projects__btn--text">tic tac toe #placeholder#</p>
+              <p>A Simple Tic Tac Toe game written in Javascript</p>
+              <a href="" class="main__projects__github">GitHub Repo</a>
+            </span>
+          </span> </div>
+
+          <div class="main__projects__container">
+            <span class="main__projects__project">
+              <button class="main__projects__btn" id="projectBtnTwo">
+                <img src="img/colour-palette-white-background_1308-127908.avif" alt="Color Pallete" height="192" width="136" class="project__btn__image">
+              </button>
+              <span class="main__projects__description">
+                <p  class="main__projects__btn--text"
+                  >color changer #placeholder#</p
+                >
+                <p>
+                  A script to allow the user to change the colour pallet of a
+                  web page
+                </p>
+                <a href="" class="main__projects__github">GitHub Repo</a>
+              </span>
+            </span>
+          </div>
+
+          <!--maybe add to all pages except landing-->
+
+          <div class="main__projects__container">
+            <span class="main__projects__project">
+              <button class="main__projects__btn" id="projectBtnThree">
+                <img src="img/APIs-in-Postman-e1616786230943.png" alt="API" height="192" width="136" class="project__btn__image">
+              </button>
+
+              <span class="main__projects__description">
+                <p class="main__projects__btn--text"
+                  >api info grabber #placeholder#</p
+                >
+                <p>
+                  A script the retrieves and displays information from an
+                  offsite Api
+                </p>
+                <a href="" class="main__projects__github">GitHub Repo</a>
+              </span>
+            </span>
+          </div>
+
+
+<div class="main__projects__container">
+  <span class="main__projects__project">
+          <button class="main__projects__btn" id="projectBtnFour">
+            <img src="img/KBIA_iYB_400x400.png" alt="Slideshow" height="192" width="136" class="project__btn__image">
+          </button>
+          <span class="main__projects__description">
+            <p class="main__projects__btn--text">slideshow #placeholder#</p>
+            <p>
+              A simple scrollable picture slideshow
+            </p>
+            <a href="" class="main__projects__github">GitHub Repo</a>
+          </span>
+        </div>
+      </span>
+
+
+        </div>
+      </section>
+    </main>
+    <footer class="footer" id="footer">
+      <div class="footer__about-me__container">
+      <h2 class="footer__about-me__heading footer__about-me--underline">Who am I?</h2>
+      <p class="footer__about-me__para">
+        I'm Jack. A Junior full stack developer based in Melbourne, Australia. Proggramming is my passion and I enjoy all thing Tech. <br> <br>
+        Asides from Programming my greatest joys come from reading a good book and spending time in my garden. 
+      </p>
+    </div>
+    <img src="img/photo.jpg" alt="Picture of me" height="300px" class="footer__about-me__picture">
+      <div class="footer__contacts__container">
+        <h2>Contact Me</h2>
+        <span
+          >
+          <p>Email: jackbadawy1999@gmail.com</p></span
+        >
+        <span
+          >
+          <p>LinkedIn: <a href="https://www.linkedin.com/in/jack-badawy-997a30191" class="footer__contact-me__link">@Jack-Badawy</a></p></span
+        >
+        <span
+          >
+          <p>GitHub: <a href="https://github.com/JackBadawy" class="footer__contact-me__link">@JackBadawy</a></p></span
+        >
+      </div>
+    </footer>
+  </body>
+</html>
