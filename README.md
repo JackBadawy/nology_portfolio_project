@@ -1,4 +1,4 @@
-# Jack Badawy's Nology Portfolio Project
+# Jack Badawy's Portfolio Project
 
 ## overview
 
